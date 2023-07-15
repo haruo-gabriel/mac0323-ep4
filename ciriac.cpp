@@ -73,7 +73,7 @@ Graph criaGrafo (string exp){
 }
 //reconhece a expressão regular a partir do grafo
 bool reconhece (Graph G, string teste){
-    vector<bool> atingidos(G.V);
+    vector<bool> atingidos(G.V); // G.V == exp.size()+1 == M+1
     for (int i = 0; i < G.V; i++) {
         atingidos[i] = false;
     }
